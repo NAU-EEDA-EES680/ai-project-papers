@@ -1,0 +1,19 @@
+name: Claim an EEDA paper
+description: EES 680 AI partner project. Sign up for one paper from nickmckay.org/eeda-papers/
+title: "Claim paper No. "
+labels: ["eeda-claim"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public:** your GitHub username and your paper choice will be visible here. If you'd rather not, close this tab and ask Nick on Slack.
+
+        Keep the title as "Claim paper No. NN", since that's how the sign-up page marks the paper as taken. If two people claim the same paper, the earlier issue keeps it. To change your mind, close this issue and claim another.
+  - type: input
+    id: paper
+    attributes:
+      label: Paper
+      description: Filled in for you when you click "Claim this paper" on the sign-up page.
+      placeholder: "No. 07: Author et al. 2016, paper title"
+    validations:
+      required: true
